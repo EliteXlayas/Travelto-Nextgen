@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "dev.travelto.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "PanoramaMixin", "ScreenBackgroundMixin", "GuiGraphicsAccess",
+    "SliderDragAccess", "OptionSliderMixin", "KeyEntryAccess", "ControlsScreenMixin",
+    "StatsCounterAccess", "LiveStatsMixin", "EmojiCoverageMixin", "BlurResourcePoolAccess", "GaussianBlurMixin",
+    "WindowIconMixin", "ModernGuiTextEffectsMixin", "ModernWorldTextEffectsMixin",
+    "IslandChatAccess", "IslandChatScreenAccess", "VanillaHudLayoutMixin", "BossBarLayoutMixin",
+    "TargetAttackMixin", "IslandBlockStockMixin",
+    "FreeCamCameraMixin", "FreeCamMouseMixin", "FreeCamKeyboardMixin", "FreeCamAutoJumpMixin", "FreeCamInteractionsMixin",
+    "FreeCamRenderOptionsMixin", "FreeCamLevelRenderMixin", "FreeCamCrosshairMixin", "FreeCamPacketsMixin",
+    "ItemPhysicsStateMixin", "ItemPhysicsMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}

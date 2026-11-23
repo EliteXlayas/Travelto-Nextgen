@@ -1,0 +1,78 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.19.4'
+    id 'org.jetbrains.kotlin.jvm' version '2.4.21'
+}
+
+version = '0.3.2'
+group = 'dev.travelto'
+
+repositories {
+    mavenCentral()
+}
+
+def modernUiDir = file(providers.gradleProperty('traveltoModernUiDir').getOrElse('libs'))
+def modernUi = new File(modernUiDir, 'ModernUI-Fabric-26.3-3.14.9.1-universal.jar')
+def forgeConfigPort = new File(modernUiDir, 'ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar')
+def modernUiInputs = [
+    (modernUi): ['SHA-256', '2c7cb5f663b7e0ce94464e3e11c00ee0aa53b467051e167089723d99dc3dec97'],
+    (forgeConfigPort): ['SHA-512', 'b9339c21e14beec2eae0ca215317284bcaacef72e1d1dee8b3dfbe2de0eefaa758a172446df85419b6534557c479abe972d7d21f4ec194f2d436f9ed4329cb9f']
+]
+def verifyModernUiDependencies = tasks.register('verifyModernUiDependencies') {
+    inputs.files(modernUiInputs.keySet())
+    doLast {
+        modernUiInputs.each { artifact, checksum ->
+            if (!artifact.isFile()) throw new GradleException("Missing ${artifact.name} in ${modernUiDir}; see README.md.")
+            def actual = java.security.MessageDigest.getInstance(checksum[0]).digest(artifact.bytes).encodeHex().toString()
+            if (actual != checksum[1]) throw new GradleException("Unexpected ${checksum[0]} for ${artifact.name}; see README.md.")
+        }
+    }
+}
+
+tasks.matching { it.name in ['compileKotlin', 'compileJava', 'runClient'] }.configureEach {
+    dependsOn verifyModernUiDependencies
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    implementation "net.fabricmc:fabric-language-kotlin:${fabric_kotlin_version}"
+    implementation files(modernUi)
+    compileOnly 'org.commonmark:commonmark:0.25.0'
+    runtimeOnly files(forgeConfigPort)
+}
+
+tasks.named('jar', Jar) {
+    dependsOn verifyModernUiDependencies
+    into('META-INF/jars') {
+        from(modernUi) { rename { 'modernui.jar' } }
+        from(forgeConfigPort) { rename { 'forgeconfigapiport.jar' } }
+    }
+}
+
+def emojiFlags = file('vendor/noto-emoji-15.1-flags.zip')
+
+processResources {
+    from(zipTree(emojiFlags))
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand(version: project.version) }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach { options.release = 25 }
+kotlin.compilerOptions.jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_25
+
+loom {
+    runs {
+        client {
+            runDir = project.findProperty('traveltoRunDir') ?: 'run'
+            def backend = project.findProperty('traveltoBackend')
+            if (backend != null) programArgs '--graphicsBackend', backend.toString()
+        }
+    }
+}

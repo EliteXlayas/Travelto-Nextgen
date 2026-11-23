@@ -1,0 +1,18 @@
+Travelto uses the following unmodified Fabric modules as nested JARs.
+
+ModernUI Unofficial Port 3.14.9.1 — LGPL-3.0-or-later
+ModernUI and Arc3D: BloCamLimb; original Fabric port: DragonHua;
+26.3 unofficial port: Huziyang520. See also the upstream contributor list.
+Binary: https://github.com/Huziyang520/ModernUI-Unofficial-Port/releases/tag/3.14.9.1
+Source: https://github.com/Huziyang520/ModernUI-Unofficial-Port/tree/3.14.9.1
+ModernUI Core: https://github.com/BloCamLimb/ModernUI
+Arc3D: https://github.com/BloCamLimb/Arc3D
+License copies: GNU-LGPL-3.0.txt and GNU-GPL-3.0.txt in this directory.
+For debugging modifications, a standalone, interface-compatible Fabric build
+with mod ID modernui and version 3.14.9.1 can replace the nested library
+by placing it in the test instance's mods directory.
+
+Forge Config API Port 26.3.1 — MPL-2.0
+Binary: https://modrinth.com/mod/forge-config-api-port/version/JpKvrr9J
+Source: https://github.com/Fuzss/forge-config-api-port/tree/v26.3.1-mc26.3.x
+License copies, including notices for third-party files, are in the nested JAR.

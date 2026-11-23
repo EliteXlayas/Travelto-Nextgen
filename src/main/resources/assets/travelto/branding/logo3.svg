@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 72 1130 1130" role="img" aria-label="Travelto">
+  <defs>
+    <linearGradient id="face" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eceaf1"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#face)" d="M120 184H890Q908 184 925 197L1181 374Q1195 384 1189 398Q1185 408 1169 408H714Q698 408 694 423L586 876Q580 899 560 912L316 1083Q300 1095 289 1085Q279 1076 284 1059L439 426Q443 408 423 408H245Q224 408 212 389L105 217Q95 201 104 191Q110 184 120 184Z"/>
+</svg>

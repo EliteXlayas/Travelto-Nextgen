@@ -1,0 +1,7 @@
+{
+  "providers": [
+    {"type": "ttf", "file": "travelto:inter-medium.ttf", "size": 10, "oversample": 3.0, "shift": [0, 0]},
+    {"type": "ttf", "file": "travelto:noto-sans-sc.ttf", "size": 10, "oversample": 3.0, "shift": [0, 0]},
+    {"type": "reference", "id": "minecraft:default"}
+  ]
+}

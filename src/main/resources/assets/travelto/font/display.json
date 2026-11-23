@@ -1,0 +1,6 @@
+{
+  "providers": [
+    {"type": "ttf", "file": "travelto:inter-semibold.ttf", "size": 30, "oversample": 2.0, "shift": [0, 0]},
+    {"type": "reference", "id": "travelto:ui"}
+  ]
+}

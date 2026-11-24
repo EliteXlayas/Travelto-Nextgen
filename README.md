@@ -2,11 +2,12 @@
 
 Travelto Nextgen is a Minecraft 26.3 Fabric Visual Mod, which brings many fun features to the game.
 
-## Codes we use: ModernUI
+## Codes we use: ModernUI , Forge Config API port
 
 - BioCamLimb is the original author of ModernUI and Arc3D https://github.com/BloCamLimb/ModernUI . 
 - DragonHua (https://github.com/DragonHua) made the original Fabric Port.
 - ModernUI (LGPL-3.0-or-later) and [Forge Config API Port](https://github.com/Fuzss/forge-config-api-port/tree/v26.3.1-mc26.3.x) (MPL-2.0) are bundled byte-for-byte, not shaded or merged. License notices and source links are in the JAR’s `META-INF/licenses/`.
+- Fuzss is the author of Forge Config API port(https://github.com/Fuzss/forge-config-api-port)
 
 ## Main Features:
 
@@ -27,4 +28,8 @@ Travelto Nextgen is a Minecraft 26.3 Fabric Visual Mod, which brings many fun fe
 - **Effects**: Display Effects you current have. (Replaces Vanilla effects display)
 ### Movement
 - **Fly**: May not work properly.
-- 
+## How to Install Travelto-Nextgen?
+
+### These are the things you need:
+- Minecrafft 26.3 Fabric
+- Fabric langauge kotlin(1.14.2+kotlin.2.4.21)

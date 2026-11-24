@@ -1,6 +1,6 @@
 # Travelto-Nextgen
 
-Travelto Nextgen is a Minecraft 26.3 Fabric Mod
+Travelto Nextgen is a Minecraft 26.3 Fabric Visual Mod, which brings many fun features to the game.
 
 ## Codes we use: ModernUI
 

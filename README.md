@@ -10,7 +10,7 @@ Travelto Nextgen is a Minecraft 26.3 Fabric Mod
 
 ## Main Features:
 
-### For Travelto itself
+### For Travelto itself(Client)
 - Custom Bloom effect, colors, Background Blur, Animation, HUD settings.
 - **Languages**: For now , we only have Chinese and English. 
 ### Renders
@@ -21,3 +21,10 @@ Travelto Nextgen is a Minecraft 26.3 Fabric Mod
 - **MenuShader**: Can be turned on or off.
 - **HUD Editor**
 - **FreeCam**: Support custom fly speed, auto-cancel.
+- **DamageParticles** : Render some damage numbers and custom particles while you are dealing damage.
+- **ESP**: See through specific entities while turning on
+- **Tracers**: Line up specific entities to your crosshair.
+- **Effects**: Display Effects you current have. (Replaces Vanilla effects display)
+### Movement
+- **Fly**: May not work properly.
+- 

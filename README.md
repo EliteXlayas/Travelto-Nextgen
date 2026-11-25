@@ -31,5 +31,5 @@ Travelto Nextgen is a Minecraft 26.3 Fabric Visual Mod, which brings many fun fe
 ## How to Install Travelto-Nextgen?
 
 ### These are the things you need:
-- Minecrafft 26.3 Fabric
+- Minecraft 26.3 Fabric
 - Fabric langauge kotlin(1.14.2+kotlin.2.4.21)

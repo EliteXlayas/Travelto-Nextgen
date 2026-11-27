@@ -18,7 +18,7 @@ Travelto Nextgen is a Minecraft 26.3 Fabric Visual&Assist Mod, which brings many
 - **Alert**: When the server changes your position, rotation, items(inventory) frequently, Alert system will identify them and remind you suspicious check or server lag.
 ### Renders
 - **WaterMark**: Has 2 styles: Logo and Dynamic Island. When switched to Dynamic island Mode, Module's status,Notices, Blocks can be displayed on it. Every features can be highly customized.
-- **TargetHUD**: has 2 styles: Travelto and Skyline. When switched to Travelto, Mob icons are displayed. For mob icons, you can choose what it should display. One is Portrait, the other is SpawnEgg. Additionally, you can choose TargetHUD's styles. For instances, Follow target, Split/Merge and custom aim distance.
+- **TargetHUD**: has 2 styles: Travelto and Skyline. When switched to Travelto, Mob icons are displayed. For mob icons, you can choose what it should display. One is Portrait, the other is SpawnEgg. Additionally, you can choose TargetHUD's styles. For instances, Follow target, Split/Merge and custom aim distance. Will Target at most 4 targets.
 - **ArrayList**: Simply display the modules you are using. The text color can be modified.
 - **Ping**: The default bind is Mouse5. Only can you see your Markers.(*light 'em up!*)
 - **MenuShader**: Can be turned on or off.
@@ -32,10 +32,10 @@ Travelto Nextgen is a Minecraft 26.3 Fabric Visual&Assist Mod, which brings many
 ### Movement
 - **Fly**: May not work properly.
 
-## World
+### World
 - **Nuker**: Automatically mining/farming/foraging custom blocks in range. Target mode and turn style are ez to modify. Block groups are supported. 
 
-## Targets
+### Targets
 - Allow you to change what kind of creatures you want to attack or render by ESP.
 
 ---

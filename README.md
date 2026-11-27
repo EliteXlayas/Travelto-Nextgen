@@ -1,13 +1,14 @@
-# Travelto-Nextgen
+# Travelto-Nextgen 0.3.14
 
 Travelto Nextgen is a Minecraft 26.3 Fabric Visual&Assist Mod, which brings many fun and useful features to the game.
 
-## Codes we use: ModernUI , Forge Config API port
+## Codes we use: ModernUI , Forge Config API port,SeedCrackerX
 
 - BioCamLimb is the original author of ModernUI and Arc3D https://github.com/BloCamLimb/ModernUI . 
 - DragonHua (https://github.com/DragonHua) made the original Fabric Port.
 - ModernUI (LGPL-3.0-or-later) and [Forge Config API Port](https://github.com/Fuzss/forge-config-api-port/tree/v26.3.1-mc26.3.x) (MPL-2.0) are bundled byte-for-byte, not shaded or merged. License notices and source links are in the JAR’s `META-INF/licenses/`.
 - Fuzss is the author of Forge Config API port(https://github.com/Fuzss/forge-config-api-port)
+- SeedcrackerX by 19MisterX98(https://github.com/19MisterX98/SeedcrackerX)
 
 ## Main Features:
 
@@ -30,6 +31,12 @@ Travelto Nextgen is a Minecraft 26.3 Fabric Visual&Assist Mod, which brings many
 - **X-Ray**: Ore persets mode and custom mode. Seed recovery available on singleplayer.
 ### Movement
 - **Fly**: May not work properly.
+
+## World
+- **Nuker**: Automatically mining/farming/foraging custom blocks in range. Target mode and turn style are ez to modify. Block groups are supported. 
+
+## Targets
+- Allow you to change what kind of creatures you want to attack or render by ESP.
 
 ---
 
